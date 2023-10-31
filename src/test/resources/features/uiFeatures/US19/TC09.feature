@@ -1,0 +1,18 @@
+@HuseyinReport
+@huseyin1909
+Feature: Teacher meet olusturabilmeli
+  Scenario: TC09_Ayni_gun_ve_saatte_farkli_toplantilar_olusturamamaliyim
+    Given Kullanici login e tiklar
+    When User Name kutusuna "Huseyin01" girer
+    And Password kutusuna "12345678" girer
+    And Login butonuna tiklar
+    And Menu butonuna tiklar
+    And Meet Management butonuna tiklar
+    And Choose Student kutusuna tiklar
+    And Acilan listede ilk secenege tiklar
+    And Date Of Meet bolumune tarih girer
+    And Start Time bolumune saat girer
+    And Stop Time bolumune saat girer
+    And Description bolumune deger girer
+    And Submit butonuna tiklar
+    And Ayni tarih ve ayni saat araliginda baska bir toplanti olusturulamadigina dair hata mesaji alindigini dogrular
